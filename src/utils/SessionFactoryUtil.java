@@ -3,6 +3,7 @@ package utils;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+//µ¥ÀýÄ£Ê½
 public class SessionFactoryUtil {
 	public static SessionFactory instance = null;
 	static Object object =new Object();
@@ -14,9 +15,7 @@ public class SessionFactoryUtil {
 					instance = new Configuration().configure().buildSessionFactory();
 				}
 			}
-			
 		}
 		return instance;
 	}
-
 }
